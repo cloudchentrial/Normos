@@ -1,3 +1,3 @@
-# Nodejs gRPC communication middleware for mmog server-to-server
+# Nodejs gRPC communication middleware for MMOGs
 This repository is a backend middleware to archieve microservices-style coding.
 
