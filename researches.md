@@ -8,4 +8,4 @@ The steps to build a communication middleware for MMOGs using gRPC.
 7. Testing and Optimizations: Test the communication middleware thoroughly to ensure reliability, performance, and scalability. Optimize the communication protocols and the middleware,functions for efficiency.
 8. Security and Authentication: Implement security measures such as encryption, authentication, and authorization mechanisms to secure the communication between different game components.
 9. Monitoring and Logging: Incorporate monitoring and logging functionalities to track and analyze communication traffic, errors, and performance metrices.
-10. Documentation and Maintenance: Document 
+10. Documentation and Maintenance: Document the communication middleware's functionality, APIs, and usage for future reference and maintenance.
