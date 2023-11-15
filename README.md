@@ -8,6 +8,8 @@ MMOGs' servers include `GameServer`, `WorldServer`, `AuthServer`, `MessageServer
 The overall MMOGs server architecture design is as follows,  
 ![nodejs-grpc-middleware-mmog-server-overall-architecture](https://github.com/cloudchentrial/nodejs-gRPC-middleware-mmog-server/assets/31240078/3c0c21b8-8767-499f-b2f3-3b520ed798ed)  
 Credit: This content takes reference to オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏 by Kengo Nakajima.  
+
+  
 In this architecture, the line indicate the communication between one server to another which carry different role and functions. This communication could be unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stack. Due to its efficency, we can design a low latency and stateful massively mulitplayer online game server system.
 
 
