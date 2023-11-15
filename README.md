@@ -1,7 +1,7 @@
 ## Node.js gRPC-based communication middleware for MMOGs  
-This hold gRPC node.js middleware: interceptors, utilities, and more.
+This repository hold gRPC node.js middleware: interceptors, utilities, and more.
 ### Introduction
-This repository is a backend middleware to achieve MMOGs architectural and modular programming. MMOG stands for the massively multiplayer online game where a lot of players log in and play concurrently at the same time. In this case, I aim to design a common system and generic functions that often exist in online games. I abstract them as middleware for future maintenance and new specific game design.  
+This is a backend middleware to achieve MMOGs architectural and modular programming. MMOG stands for the massively multiplayer online game where a lot of players log in and play concurrently at the same time. In this case, I aim to design a common system and generic functions that often exist in online games. I abstract them as middleware for future maintenance and new specific game design.  
 
 
 MMOGs' servers include `GameServer`, `WorldServer`, `AuthServer`, `MessageServer`, `LoginServer`, `DababaseServer`, `CommonDatabaseServer`, `ProxyServer` and `LogServer`. Thereof, `GameServer` is attached by `WorldServer`, `DatabaseServer`, `ProxyServer`, etc. And could have many depending on the scale of the player base. There is a `DBMS` attached to `DatabaseServer` and `CommonDatabaseServer`.  
