@@ -4,7 +4,7 @@ This repository is a backend middleware to achieve MMOGs architectural and modul
 MMOGs' servers include `GameServer`, `WorldServer`, `AuthServer`, `MessageServer`, `LoginServer`, `DababaseServer`, `CommonDatabaseServer`, `ProxyServer` and `LogServer`. Thereof, `GameServer` is attached by `WorldServer`, `DatabaseServer`, `ProxyServer` and could have many depending on the scale of playerbase. There is a `DBMS` attached to `DatabaseServer` and `CommonDatabaseServer`.  
 The overall MMOGs server architecture design is as follows,  
 ![nodejs-grpc-middleware-mmog-server-overall-architecture](https://github.com/cloudchentrial/nodejs-gRPC-middleware-mmog-server/assets/31240078/670e7721-6fba-46e0-b801-a4f1e8f6fb46)  
-In this architecture, the line indicate the communication between one server to another which carry different role and functions. This communication could be unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stack. Due to its efficency, we can design a low latency and stateful massively mulitplayer online game server system using gRPC.  
+In this architecture, the line indicate the communication between one server to another which carry different role and functions. This communication could be unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stack. Due to its efficency, we can design a low latency and stateful massively mulitplayer online game server system.
 
 
 
