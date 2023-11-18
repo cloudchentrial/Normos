@@ -12,7 +12,10 @@ Use Case: The overall typical MMOG server architecture design is as follows. Thi
 Credit: This content takes reference to オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏 by Kengo Nakajima.  
 
   
-In this architecture, the line indicate the communication between one server to another which carry different role and functions. This communication could be either unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stack. Due to its efficency, we can design a low latency and stateful massively mulitplayer online game server system.
+In this architecture, the line indicate the communication between one server to another which carry different role and functions. This communication could be either unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stack. Due to its efficency, we can design a low latency and stateful massively mulitplayer online game server system.  
+
+### Client-side support
+Godot Engine is the main support.
 
 
 
