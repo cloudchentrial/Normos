@@ -7,7 +7,7 @@ This is a backend middleware to achieve MMOGs architectural and modular programm
 MMOGs' servers include `GameServer`, `WorldServer`, `AuthServer`, `MessageServer`, `LoginServer`, `DababaseServer`, `CommonDatabaseServer`, `ProxyServer` and `LogServer`. Thereof, `GameServer` is attached by `WorldServer`, `DatabaseServer`, `ProxyServer`, etc. And could have many depending on the scale of the player base. There is a `DBMS` attached to `DatabaseServer` and `CommonDatabaseServer`.  
 
   
-Use Case: The overall typical MMOG server architecture design is as follows. This uses both space division method and parallel world method.
+Use Case: The overall typical MMOG server architecture design is as follows. This uses both space division method and parallel world method. Space division method means to divide the whole world map into small region, each cluster/process serves each region. Parallel world method establish a new entire world for more upcoming player.
 ![nodejs-grpc-middleware-mmog-server-overall-architecture](https://github.com/cloudchentrial/nodejs-gRPC-middleware-mmog-server/assets/31240078/1967d792-c519-41ad-93b3-6a4f959bedf8)  
 Credit: This content takes reference to オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏 by Kengo Nakajima.  
 
