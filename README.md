@@ -15,7 +15,7 @@ Credit: This content takes reference to オンラインゲームを支える技�
 In this architecture, the line indicates the communication between one server to another which carry different role and functions. This communication could be either unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stacks. Due to its efficiency, we can design a low latency and stateful massively multiplayer online game server system.  
 
 ### Client-side support
-Godot Engine is the only support for client-side in this case using Websockets for server-client communication.
+Godot Engine is the only support for client-side in this case using Websocket Secure for server-client communication.
 
 
 
