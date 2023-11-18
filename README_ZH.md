@@ -8,7 +8,7 @@ MMOG 的伺服器可能包括「GameServer」、「WorldServer」、「AuthServe
   
 使用案例：整體典型MMOG伺服器架構設計如下。 這裡同時使用了空間分割法和平行世界法。 空間劃分方法是指將整個世界地圖劃分為小區域，每個集群/進程（GameServer）為每個區域服務。 平行世界方法建立了一個新的整個世界，其中資料庫系統和遊戲伺服器與另一個世界分開。  
 ![nodejs-grpc-middleware-mmog-server-overall-architecture](https://github.com/cloudchentrial/nodejs-gRPC-middleware-mmog-server/assets/31240078/d53bb7c3-cb0f-4c60-bdbc-276661242680)  
-圖片來源：本內容參考了 Kengo Nakajima 的《オンラインゲームを支える技術 -- 積木なプurei空間の舞台裡》。
+圖片來源：本內容參考了 Kengo Nakajima 的《オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏》。
 
   
 在這種架構中，線路表示一台伺服器與另一台承載不同角色和功能的伺服器之間的通訊。 這種通訊可以是單向的或雙向的。 我尋求遠端過程呼叫框架 - gRPC 作為重要的技術堆疊之一。 由於其效率，我們可以設計一個低延遲且有狀態的大型多人線上遊戲伺服器系統。
