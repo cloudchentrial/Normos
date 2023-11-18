@@ -9,7 +9,7 @@ The MMOG's servers might include `GameServer`, `WorldServer`, `AuthServer`, `Mes
   
 Use Case: The overall typical MMOG server architecture design is as follows. This uses both the space division method and the parallel world method. The space division method means to divide the whole world map into small regions, and each cluster/process(GameServer) serves each region. The parallel world method establishes a new entire world in which the database system and game server are separate from another world.  
 ![nodejs-grpc-middleware-mmog-server-overall-architecture](https://github.com/cloudchentrial/nodejs-gRPC-middleware-mmog-server/assets/31240078/1967d792-c519-41ad-93b3-6a4f959bedf8)  
-Credit: This content takes reference to オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏 by Kengo Nakajima.  
+Credit: This content takes reference to 《オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏》 by Kengo Nakajima.  
 
   
 In this architecture, the line indicates the communication between one server to another which carry different role and functions. This communication could be either unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stacks. Due to its efficiency, we can design a low latency and stateful massively multiplayer online game server system.  
