@@ -1,21 +1,20 @@
-## Node.js gRPC-based communication middleware for MMOGs  
-This repository hold gRPC node.js middleware: interceptors, utilities, and more.
-### Introduction
-This is a backend middleware to achieve MMOGs architectural and modular programming. MMOG stands for the massively multiplayer online game where a lot of players log in and play concurrently at the same time. In this case, I aim to design a common system and generic functions that often exist in online games. I abstract them as middleware for future maintenance and new specific game design.  
+此儲存庫包含 gRPC Node.js 中間件：攔截器、實用程式等。
+＃＃＃ 介紹
+這是一個實現MMOG架構和模組化編程的後端中間件。 MMOG 代表大型多人線上遊戲，許多玩家同時登入並玩遊戲。 在這種情況下，我的目標是設計一個在網路遊戲中經常存在的通用系統和通用功能。 我將它們抽象化為中間件，以供將來維護和新的特定遊戲設計。
 
 
-The MMOG's servers might include `GameServer`, `WorldServer`, `AuthServer`, `MessageServer`, `LoginServer`, `DatabaseServer`, `CommonDatabaseServer`, `ProxyServer` and `LogServer`. Thereof, `GameServer` is attached by `WorldServer`, `DatabaseServer`, `ProxyServer`, etc. And could have many depending on the scale of the player base. There is a `DBMS` attached to `DatabaseServer` and `CommonDatabaseServer`.  
-
-  
-Use Case: The overall typical MMOG server architecture design is as follows. This uses both the space division method and the parallel world method. The space division method means to divide the whole world map into small regions, and each cluster/process(GameServer) serves each region. The parallel world method establishes a new entire world in which the database system and game server are separate from another world.  
-
-Credit: This content takes reference to オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏 by Kengo Nakajima.  
+MMOG 的伺服器可能包括「GameServer」、「WorldServer」、「AuthServer」、「MessageServer」、「LoginServer」、「DatabaseServer」、「CommonDatabaseServer」、「ProxyServer」和「LogServer」。 其中，「GameServer」附加有「WorldServer」、「DatabaseServer」、「ProxyServer」等。並且根據玩家群的規模可以有很多。 有一個附加到“DatabaseServer”和“CommonDatabaseServer”的“DBMS”。
 
   
-In this architecture, the line indicates the communication between one server to another which carry different role and functions. This communication could be either unary or bidirectional. I seek remote procedural call framework - gRPC as one of the important technical stacks. Due to its efficiency, we can design a low latency and stateful massively multiplayer online game server system.  
+使用案例：整體典型MMOG伺服器架構設計如下。 這裡同時使用了空間分割法和平行世界法。 空間劃分方法是指將整個世界地圖劃分為小區域，每個集群/進程（GameServer）為每個區域服務。 平行世界方法建立了一個新的整個世界，其中資料庫系統和遊戲伺服器與另一個世界分開。
 
-### Client-side support
-Godot Engine is the only support for client-side in this case using Websocket Secure for server-client communication.
+圖片來源：本內容參考了 Kengo Nakajima 的《オンラインゲームを支える技術 -- 積木なプurei空間の舞台裡》。
+
+  
+在這種架構中，線路表示一台伺服器與另一台承載不同角色和功能的伺服器之間的通訊。 這種通訊可以是單向的或雙向的。 我尋求遠端過程呼叫框架 - gRPC 作為重要的技術堆疊之一。 由於其效率，我們可以設計一個低延遲且有狀態的大型多人線上遊戲伺服器系統。
+
+### 客戶端支援
+在本例中，Godot 引擎是客戶端的唯一支持，使用 Websocket Secure 進行伺服器-客戶端通訊。
 
 
 
