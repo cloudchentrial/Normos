@@ -8,7 +8,8 @@ MMOGs' servers include `GameServer`, `WorldServer`, `AuthServer`, `MessageServer
 
   
 Use Case: The overall typical MMOG server architecture design is as follows. This uses both space division method and parallel world method.
-![nodejs-grpc-middleware-mmog-server-overall-architecture](https://github.com/cloudchentrial/nodejs-gRPC-middleware-mmog-server/assets/31240078/3c0c21b8-8767-499f-b2f3-3b520ed798ed)  
+ ![nodejs-grpc-middleware-mmog-server-overall-architecture](https://github.com/cloudchentrial/nodejs-gRPC-middleware-mmog-server/assets/31240078/0308eac6-3633-47c9-a9a0-38af62ba1452)  
+ 
 Credit: This content takes reference to オンラインゲームを支える技術 -- 壮大なプレイ空間の舞台裏 by Kengo Nakajima.  
 
   
