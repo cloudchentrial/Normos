@@ -16,7 +16,7 @@ MMOG 的伺服器可能包括「GameServer」、「WorldServer」、「AuthServe
 
 ### 客戶端支援
   1.在本例中，Godot 引擎是客戶端的支持，使用 Websocket Secure 進行伺服器-客戶端通訊。  
-  2.虛幻引擎4，SSL+Fsocket是客戶端的支持．
+  2.虛幻引擎4客戶端的支持，使用SSL+Fsocket類別．
 
 
 
